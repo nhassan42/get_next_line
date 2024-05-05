@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nabilhassan <nabilhassan@student.42.fr>    +#+  +:+       +#+        */
+/*   By: nhassan <nhassan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 00:36:25 by nabilhassan       #+#    #+#             */
-/*   Updated: 2024/04/29 06:58:11 by nabilhassan      ###   ########.fr       */
+/*   Created: 2024/05/05 16:51:20 by nhassan           #+#    #+#             */
+/*   Updated: 2024/05/05 16:51:22 by nhassan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

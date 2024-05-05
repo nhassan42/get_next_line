@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nabilhassan <nabilhassan@student.42.fr>    +#+  +:+       +#+        */
+/*   By: nhassan <nhassan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 00:36:15 by nabilhassan       #+#    #+#             */
-/*   Updated: 2024/05/01 06:41:21 by nabilhassan      ###   ########.fr       */
+/*   Created: 2024/05/05 16:50:36 by nhassan           #+#    #+#             */
+/*   Updated: 2024/05/05 21:46:30 by nhassan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,13 +65,13 @@ char	*trim_line(char *line_buffer)
 
 char	*get_next_line(int fd)
 {
-	static char	*remainder[MAX_FD];
+	static char	*remainder[OPEN_MAX];
 	char		*line;
 	char		*buff;
 
-	if (fd < 0 || fd > MAX_FD || BUFFER_SIZE <= 0)
+	if (fd < 0 || fd > OPEN_MAX || BUFFER_SIZE <= 0)
 		return (0);
-	buff = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
+	buff = (char *)malloc(((size_t)BUFFER_SIZE + 1) * sizeof(char));
 	if (!buff)
 		return (NULL);
 	line = get_a_line(fd, remainder[fd], buff);
